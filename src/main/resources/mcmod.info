@@ -1,0 +1,16 @@
+[
+{
+  "modid": "GemsMod",
+  "name": "Gems Mod",
+  "description": "The Mod That Adds Gems.",
+  "version": "0.1",
+  "mcversion": "1.8",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Disaac1"],
+  "credits": "Brettigus",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
