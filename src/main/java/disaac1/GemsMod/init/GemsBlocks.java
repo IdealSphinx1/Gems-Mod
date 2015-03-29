@@ -24,6 +24,7 @@ public class GemsBlocks {
 	public static Block amethyst_Block;
 	public static Block topaz_Ore;
 	public static Block topaz_Block;
+	public static Block obsidian_Block;
 
 	public static void init(){
 
@@ -36,6 +37,7 @@ public class GemsBlocks {
 		amethyst_Block = new gems_Block(Material.rock, "amethyst_Block");
 		topaz_Ore = new topaz_Ore(Material.rock);
 		topaz_Block = new gems_Block(Material.rock, "topaz_Block");
+		obsidian_Block = new gems_Block(Material.rock, "obsidian_Block");
 	}
 
 	public static void registers(){
@@ -47,6 +49,7 @@ public class GemsBlocks {
 		register(amethyst_Block);
 		register(topaz_Ore);
 		register(topaz_Block);
+		register(obsidian_Block);
 	}
 
 	public static void registerRenders(){
@@ -58,6 +61,7 @@ public class GemsBlocks {
 		registerRender(amethyst_Block);
 		registerRender(topaz_Ore);
 		registerRender(topaz_Block);
+		registerRender(obsidian_Block);
 	}
 	public static void registerRender(Block block){
 
