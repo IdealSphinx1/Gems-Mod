@@ -30,6 +30,7 @@ public class GemsItems {
 	public static ToolMaterial EMERALD = EnumHelper.addToolMaterial("EMERALD", 3, 1500, 7.0f, 3.0f, 10);
 	public static ToolMaterial AMETHYST = EnumHelper.addToolMaterial("AMETHYST", 2, 1000, 7.0f, 2.5f, 16);
 	public static ToolMaterial TOPAZ = EnumHelper.addToolMaterial("TOPAZ", 2, 800, 7.0f, 3.0f, 16);
+	public static ToolMaterial OBSIDIAN = EnumHelper.addToolMaterial("OBSIDIAN", 3, 5000, 4.0f, 2.0f, 30);
 	
 	public static ArmorMaterial RUBYARMOR= EnumHelper.addArmorMaterial("RUBYARMOR", "gemsmod:ruby", 47, new int[]{2, 5, 3, 2}, 28);
 	public static ArmorMaterial SAPPHIREARMOR = EnumHelper.addArmorMaterial("SAPPHIREARMOR", "gemsmod:sapphire", 47, new int[]{2, 5, 3, 2}, 28);
@@ -37,6 +38,7 @@ public class GemsItems {
 	public static ArmorMaterial EMERALDARMOR = EnumHelper.addArmorMaterial("EMERALDARMOR", "gemsmod:emerald", 55, new int[]{3,5,4,2}, 25);
 	public static ArmorMaterial AMETHYSTAMOR = EnumHelper.addArmorMaterial("AMETHYSTAMROR", "gemsmod:amethyst", 50, new int[]{3, 5, 3, 2}, 30);
 	public static ArmorMaterial TOPAZARMOR = EnumHelper.addArmorMaterial("TOPAZARMOR", "gemsmod:topaz", 50, new int[]{4, 5, 5, 4}, 28);
+	public static ArmorMaterial OBSIDIANARMOR = EnumHelper.addArmorMaterial("OBSIDIAN", "gemsmod:obsidian", 500, new int[]{2, 2, 2, 2}, 30);
 	
 	//public static Item example_name;//
 	//Ruby
@@ -111,6 +113,18 @@ public class GemsItems {
 	public static Item topaz_Hoe;
 	public static Item topaz_Ingot;
 	
+	//Obsidian
+	public static Item obsidian_Helmet;
+	public static Item obsidian_Chestplate;
+	public static Item obsidian_Leggings;
+	public static Item obsidian_Boots;
+	public static Item obsidian_Pickaxe;
+	public static Item obsidian_Sword;
+	public static Item obsidian_Spade;
+	public static Item obsidian_Axe;
+	public static Item obsidian_Hoe;
+	public static Item obsidian_Ingot;
+	
 	//Dusts
 	public static Item diamond_Dust;
 	public static Item ruby_Dust;
@@ -120,6 +134,7 @@ public class GemsItems {
 	public static Item quartz_Dust;
 	public static Item amethyst_Dust;
 	public static Item topaz_Dust;
+	public static Item obsidian_Dust;
 
 
 	public static void init() {
@@ -144,8 +159,6 @@ public class GemsItems {
 		sapphire_Spade= new gems_Spade(SAPPHIRE, "sapphire_Spade");
 		sapphire_Axe = new gems_Axe(SAPPHIRE, "sapphire_Axe");
 		sapphire_Hoe = new gems_Hoe(SAPPHIRE, "sapphire_Hoe");
-		
-		ultimate_Ingot = new gems_Ingot("ultimate_Ingot");
 		
 		quartz_Helmet = new gems_Armor(QUARTZARMOR, 0, 0, "quartz_Helmet");
 		quartz_Chestplate = new gems_Armor(QUARTZARMOR, 0, 1, "quartz_Chestplate");
@@ -189,6 +202,19 @@ public class GemsItems {
 		topaz_Spade = new gems_Spade(TOPAZ, "topaz_Spade");
 		topaz_Hoe = new gems_Hoe(TOPAZ, "topaz_Hoe");
 		
+		obsidian_Ingot = new gems_Ingot("obsidian_Ingot");
+		obsidian_Helmet = new gems_Armor(OBSIDIANARMOR, 0, 0, "obsidian_Helmet");
+		obsidian_Chestplate = new gems_Armor(OBSIDIANARMOR, 0, 1, "obsidian_Chestplate");
+		obsidian_Leggings = new gems_Armor(OBSIDIANARMOR, 0, 2, "obsidian_Leggings");
+		obsidian_Boots = new gems_Armor(OBSIDIANARMOR, 0, 3, "obsidian_Boots");
+		obsidian_Pickaxe = new gems_Pickaxe(OBSIDIAN, "obsidian_Pickaxe");
+		obsidian_Sword = new gems_Sword(OBSIDIAN, "obsidian_Sword");
+		obsidian_Axe = new gems_Axe(OBSIDIAN, "obsidian_Axe");
+		obsidian_Spade = new gems_Spade(OBSIDIAN, "obsidian_Spade");
+		obsidian_Hoe = new gems_Hoe(OBSIDIAN, "obsidian_Hoe");
+		
+		ultimate_Ingot = new gems_Ingot("ultimate_Ingot");
+		
 		diamond_Dust = new gems_Dust("diamond_Dust");
 		ruby_Dust = new gems_Dust("ruby_Dust");
 		sapphire_Dust = new gems_Dust("sapphire_Dust");
@@ -196,6 +222,7 @@ public class GemsItems {
 		quartz_Dust = new gems_Dust("quartz_Dust");
 		amethyst_Dust = new gems_Dust("amethyst_Dust");
 		topaz_Dust = new gems_Dust("topaz_Dust");
+		obsidian_Dust = new gems_Dust("obsidian_Dust");
 		ultimate_Dust = new gems_Dust("ultimate_Dust");
 	}
 	public static void registers(){
@@ -221,6 +248,7 @@ public class GemsItems {
 		register(sapphire_Boots);
 		register(diamond_Dust);
 		register(ruby_Dust);
+		register(obsidian_Dust);
 		register(sapphire_Dust);
 		register(emerald_Dust);
 		register(quartz_Dust);
@@ -266,6 +294,16 @@ public class GemsItems {
 		register(topaz_Spade);
 		register(topaz_Axe);
 		register(topaz_Hoe);
+		register(obsidian_Ingot);
+		register(obsidian_Helmet);
+		register(obsidian_Chestplate);
+		register(obsidian_Leggings);
+		register(obsidian_Boots);
+		register(obsidian_Pickaxe);
+		register(obsidian_Sword);
+		register(obsidian_Spade);
+		register(obsidian_Axe);
+		register(obsidian_Hoe);
 	}
 	public static void registerRenders() {
 		
@@ -336,6 +374,17 @@ public class GemsItems {
 		registerRender(topaz_Spade);
 		registerRender(topaz_Axe);
 		registerRender(topaz_Hoe);
+		registerRender(obsidian_Ingot);
+		registerRender(obsidian_Helmet);
+		registerRender(obsidian_Chestplate);
+		registerRender(obsidian_Leggings);
+		registerRender(obsidian_Boots);
+		registerRender(obsidian_Pickaxe);
+		registerRender(obsidian_Sword);
+		registerRender(obsidian_Spade);
+		registerRender(obsidian_Axe);
+		registerRender(obsidian_Hoe);
+		registerRender(obsidian_Dust);
 	}
 	public static void registerRender(Item item) {
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(Reference.MOD_ID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
