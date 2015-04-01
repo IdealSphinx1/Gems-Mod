@@ -77,7 +77,7 @@ public class GemsRecipes {
 		GameRegistry.addShapelessRecipe(new ItemStack(GemsItems.quartz_Dust, 4), Blocks.quartz_block, Blocks.cobblestone);
 		GameRegistry.addRecipe(new ItemStack(GemsItems.obsidian_Ingot), "GGG", "GGG", "GGG", 'G', Blocks.obsidian);
 		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.obsidian, 9), GemsItems.obsidian_Ingot);
-		GameRegistry.addRecipe(new ItemStack(GemsBlocks.ultimate_See_er, 8), "GGG", "GSG", "GGG", 'G', GemsItems.ultimate_Ingot, 'S', Items.glass_bottle);
+		GameRegistry.addRecipe(new ItemStack(GemsBlocks.ultimate_See_er, 8), "GGG", "GSG", "GGG", 'G', GemsItems.ultimate_Ingot, 'S', Blocks.glass);
 	
 	
 	}
