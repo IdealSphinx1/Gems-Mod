@@ -1,6 +1,8 @@
 package disaac1.GemsMod.init;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockChest;
+import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.Minecraft;
@@ -25,6 +27,7 @@ public class GemsBlocks {
 	public static Block topaz_Ore;
 	public static Block topaz_Block;
 	public static Block obsidian_Block;
+	public static BlockContainer ultimate_See_er;
 
 	public static void init(){
 
@@ -38,6 +41,7 @@ public class GemsBlocks {
 		topaz_Ore = new topaz_Ore(Material.rock);
 		topaz_Block = new gems_Block(Material.rock, "topaz_Block");
 		obsidian_Block = new gems_Block(Material.rock, "obsidian_Block");
+		ultimate_See_er = new ultimate_See_er();
 	}
 
 	public static void registers(){
@@ -50,6 +54,7 @@ public class GemsBlocks {
 		register(topaz_Ore);
 		register(topaz_Block);
 		register(obsidian_Block);
+		register(ultimate_See_er);
 	}
 
 	public static void registerRenders(){
@@ -62,6 +67,7 @@ public class GemsBlocks {
 		registerRender(topaz_Ore);
 		registerRender(topaz_Block);
 		registerRender(obsidian_Block);
+		registerRender(ultimate_See_er);
 	}
 	public static void registerRender(Block block){
 
