@@ -19,12 +19,13 @@ public class ultimate_See_er extends BlockContainer
 
 	public ultimate_See_er()
     {
-        super(Material.wood);
+        super(Material.cloth);
         this.isBlockContainer = true;
         this.setCreativeTab(MainClass.tabGems);
-        this.setBlockBounds(0F, 0.0F, 0F, 1F, 0.1F, 1F);
+        this.setBlockBounds(0F, 0F, 0F, 1F, 1F, 1F);
         this.setUnlocalizedName("ultimate_See_er");
         this.setStepSound(soundTypeStone);
+        this.setHardness(1.0f);
     }
 
 	@Override
